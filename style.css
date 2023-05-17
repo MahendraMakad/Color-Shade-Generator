@@ -1,0 +1,162 @@
+* {
+  font-family: sans-serif, "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(227, 231, 227);
+  min-height: 100vh;
+}
+
+/* styling of navbar section starts */
+.navbar {
+  padding: 1rem;
+  text-align: center;
+  background: rgb(227, 231, 227);
+}
+
+.navbar-container {
+  display: flex;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar h1 {
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.input-place {
+  display: grid;
+  padding: 0.5rem 0.5rem;
+  min-width: 200px;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.box {
+  widows: 200px;
+  height: 70px;
+  padding: 1rem;
+}
+/* styling of navbar section ends */
+
+/* styling of hero section starts */
+.hero {
+  padding: 1rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#colorGrid {
+  width: 800px;
+  border: 1px solid rgb(193, 192, 192);
+  border-radius: 4px;
+}
+
+.colorBox {
+  width: 100%;
+  min-width: 50px;
+  min-height: 100px;
+  padding: 0 0.5rem;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 100px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.colorBox:hover {
+  border: 1px solid rgb(100, 102, 224);
+}
+
+#colorInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  color: #222;
+  font-size: 14px;
+  min-width: 300px;
+  max-width: 500px;
+  line-height: 1.5;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+#colorInfo h2 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+#colorInfo table {
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#colorInfo td {
+  padding: 5px;
+  color: rgb(104, 98, 98);
+  text-align: center;
+}
+
+/* styling of hero section ends */
+
+/* media queries of navbar section */
+
+/* media query for .colorBox */
+@media screen and (max-width: 720px) {
+  .colorBox {
+    height: 50px;
+  }
+
+  #colorGrid {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+}
+
+/* media query for .input-container */
+@media screen and (max-width: 600px) {
+  .input-container {
+    flex-wrap: wrap;
+  }
+
+  #colorGrid {
+    flex-wrap: wrap;
+    width: 300px;
+  }
+}
